@@ -1,0 +1,10 @@
+---
+- name: Install Incus
+  hosts: cloud
+  become: true
+  tasks:
+  - name: Update cache and Install Incus
+    ansible.builtin.apt:
+      name: incus
+      update_cache: yes
+      state: latest

@@ -1,0 +1,9 @@
+---
+- name: Install Incus GUI
+  hosts: cloud
+  become: true
+  tasks:
+  - name: Installing Incus GUI
+    ansible.builtin.apt:
+      name: incus-ui-canonical 
+      state: latest

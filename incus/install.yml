@@ -1,0 +1,5 @@
+---
+- import_playbook: ../basic/basic.yml
+- import_playbook: setupRepo/main.yml
+- import_playbook: setupIncus/main.yml
+- import_playbook: setupIncusGUI/main.yml
